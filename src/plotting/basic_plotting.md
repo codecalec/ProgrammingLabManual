@@ -59,9 +59,9 @@ time = np.arange(0, 5) # list showing time from 0 to 4 seconds
 temprature = np.array([82, 71, 63, 56, 50]) # numpy array of measured temprature data
 uncertainty = np.array([1.2, 1.0, 1.0, 0.8, 0.8]) # Some uncertainty associated with the measurement
 
-# This will produce a plot with errorbars representing the uncertainty
+# This will produce a plot with errorbars representing the uncertainty on the y axis
 # The yerr parameter can either be a constant value
-plt.errobar(time, temperature, yerr=1.0)
+plt.errorbar(time, temperature, yerr=1.0)
 
 # or yerr can be a list of the same length as the x and y parameters
 plt.errorbar(time, temperature, yerr=uncertainty)
@@ -70,3 +70,8 @@ plt.errorbar(time, temperature, yerr=uncertainty)
 plt.errorbar(time, temperature, yerr=uncertainty, linestyle="None")
 ```
 Full documentation is available [online](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.errorbar.html).
+
+## Exercises
+1. Plot an exponential function \\( f(x)= e^{2x} \\) between -10 and 10 using `np.exp()`
+2. In the same plot, include the derivative of the function over the same domain.
+3. Save the figure and put it on the fridge.
