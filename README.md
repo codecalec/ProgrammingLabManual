@@ -4,10 +4,12 @@ The concept for a programming lab manual was inspired by *Introduction to Measur
 It can be found [here](http://www.phy.uct.ac.za/phy/people/academic/buffler/downloads/labmanual).
 This was used to introduce the concepts of uncertainty to undergraduates in the University of Cape Town 1st year laboratory.
 
+This book was created using [mdBook](https://github.com/rust-lang/mdBook) and is available at [lab.alexveltman.com](https://lab.alexveltman.com).
+
 ## Requirements
 First, you are required to have a working version of the [Rust](https://www.rust-lang.org/learn) programming language with the cargo package manager included.
 
-To build this book, it is required that you have a version of [mdbook](https://github.com/rust-lang/mdBook) installed.
+To build this book, it is required that you have a version of [mdBook](https://github.com/rust-lang/mdBook) installed.
 The simplest way to do this is to use cargo:
 ``` sh
 $ cargo install mdbook
