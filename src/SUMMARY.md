@@ -5,6 +5,6 @@
 
 - [Plotting](./plotting/README.md)
   - [Basic Plotting](./plotting/basic_plotting.md)
-  - [Handling Figure](./plotting/handling_figures.md)
+  - [Fine-Tuning Figures](./plotting/fine_tuning_figures.md)
 
 - [Fitting](./fitting/README.md)
