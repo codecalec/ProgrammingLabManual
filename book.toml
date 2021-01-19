@@ -7,3 +7,4 @@ title = "Programming Lab Manual"
 
 [output.html]
 mathjax-support = true
+git-repository-url = "https://github.com/codecalec/ProgrammingLabManual"
