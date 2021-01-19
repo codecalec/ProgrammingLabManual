@@ -12,7 +12,7 @@ The function `plt.plot()` allows use to plot straight line graphs quickly.
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = np.Array([1, 2, 3, 4, 5]); # Create a 1D numpy array
+x = np.array([1, 2, 3, 4, 5]); # Create a 1D numpy array
 y = 2 * x # Use element wise operations to generate f(x)
 plt.plot(x, y) # Create a plot element on the current figure
 plt.show() # Display the current figure in a windows
