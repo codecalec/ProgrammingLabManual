@@ -49,7 +49,7 @@ y = [2, 4, 6]
 plt.scatter(x, y) # similar usage to plt.plot()
 plt.scatter(x, y, s=5) # s represents the size of dots plotted
 ```
-Full documentation is available [online](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.scatter.html).
+Full documentation is available [online](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html#matplotlib.pyplot.scatter).
 
 ### errorbar()
 The `plt.errorbar()` function is one of the most used in experimental labs.
@@ -75,7 +75,7 @@ plt.errorbar(time, temperature, yerr=uncertainty)
 # will remove that annoying straight line between points
 plt.errorbar(time, temperature, yerr=uncertainty, linestyle="None")
 ```
-Full documentation is available [online](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.errorbar.html).
+Full documentation is available [online](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.errorbar.html).
 
 ## Exercises
 1. Plot an exponential function \\( f(x)= e^{2x} \\) between -10 and 10 using `np.exp()`

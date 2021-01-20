@@ -54,7 +54,7 @@ plt.title("Double Peak")
 plt.show()
 ```
 
-A complete list of [linestyles](https://matplotlib.org/3.2.1/gallery/lines_bars_and_markers/linestyles.html) and [colours](https://matplotlib.org/3.2.1/gallery/color/named_colors.html) can be found in the Matplotlib documentation.
+A complete list of [linestyles](https://matplotlib.org/gallery/lines_bars_and_markers/linestyles.html) and [colours](https://matplotlib.org/gallery/color/named_colors.html) can be found in the Matplotlib documentation.
 
 ### Adding Legends
 Legends provide the clearest way of labelling different plots when they are included on the same figure.
@@ -84,5 +84,4 @@ plt.plot(x, g, label="$g(x) = \\beta x^{2}$")
 plt.legend()
 plt.show()
 ```
-Full documentation can be found [online](https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.legend.html).
-
+Full documentation can be found [online](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.legend.html).
