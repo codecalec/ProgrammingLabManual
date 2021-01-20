@@ -10,6 +10,7 @@
 - [Plotting](./plotting/README.md)
   - [Basic Plotting](./plotting/basic_plotting.md)
   - [Fine-Tuning Figures](./plotting/fine_tuning_figures.md)
+  - [Working with Histograms](./plotting/histograms.md)
 
 - [Fitting](./fitting/README.md)
   - [Least Squares Regression]()
