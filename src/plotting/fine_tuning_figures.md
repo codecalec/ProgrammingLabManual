@@ -52,17 +52,9 @@ plt.plot(upper_peak, linestyle="dotted", color="green")
 plt.plot(combined, color="red")
 plt.title("Double Peak")
 plt.show()
-
-# The fmt argument exists to shorten some of this
-# The following lines are equivalent
-plt.plot(lower_peak, fmt="--b")
-plt.plot(upper_peak, fmt=":g")
-plt.plot(combined, fmt="r")
-plt.title("Double Peak")
-plt.show()
 ```
 
-A complete list of [linestyles](https://matplotlib.org/3.2.1/gallery/lines_bars_and_markers/linestyles.html) and [colours](https://matplotlib.org/3.2.1/gallery/color/named_colors.html) can be found in the Matplotlib documentation. More information for the use of the `fmt` argument can be found at the bottom of the [page](https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.plot.html) for `plt.plot()`.
+A complete list of [linestyles](https://matplotlib.org/3.2.1/gallery/lines_bars_and_markers/linestyles.html) and [colours](https://matplotlib.org/3.2.1/gallery/color/named_colors.html) can be found in the Matplotlib documentation.
 
 ### Adding Legends
 Legends provide the clearest way of labelling different plots when they are included on the same figure.
