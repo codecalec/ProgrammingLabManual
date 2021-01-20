@@ -9,4 +9,4 @@ It is heavily integrated into other SciPy packages and allows for us to easily t
 Other plotting packages include:
 * [Seaborn](https://seaborn.pydata.org/)  - A plotting package for statistical graphics. Built on top of Matplotlib. [**BSD-3 Clause**]
 * [Plotly](https://plotly.com/python/) - A modern web-focused plotting library. [**MIT**]
-* [Gnuplot](www.gnuplot.info) - The classic unix plotting program. Requires piping data from python to an external program. [**gnuplot**]
+* [Gnuplot](http://www.gnuplot.info) - The classic unix plotting program. Requires piping data from python to an external program. [**gnuplot**]
