@@ -2,9 +2,8 @@
 In order to use Matplotlib, we need to import it.
 ``` python
 import matplotlib.pyplot as plt 
-
 ```
-We use the `as` keyword to substitute for the longer part with plt
+We use the `as` keyword to substitute for the longer part with `plt`.
 It will be assumed that you have this line for the rest of this chapter.
 
 > If you get an error related to this line, make sure your have installed Matplotlib correctly
@@ -42,8 +41,8 @@ plt.savefig("name_of_image.png") # Save figure to current directory
 plt.clf() # Clears your figure
 ```
 
-## scatter()
-The function `plt.scatter()` allows use to plot dots representing two different variables.
+### scatter()
+The function `plt.scatter()` allows us to plot dots representing two different variables.
 ```python
 x = [1, 2, 3]
 y = [2, 4, 6]
@@ -52,7 +51,7 @@ plt.scatter(x, y, s=5) # s represents the size of dots plotted
 ```
 Full documentation is available [online](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.scatter.html).
 
-## errorbar()
+### errorbar()
 The `plt.errorbar()` function is one of the most used in experimental labs.
 It allows use to produce a scatter-like plot but with lovely uncertainty markers.
 ```python
