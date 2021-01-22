@@ -2,7 +2,7 @@
 - [Introduction](./introduction.md)
 
 - [Data Manipulation](./data_manipulation/README.md)
-  - [Intro to Numpy arrays]()
+  - [Intro to Numpy arrays](./data_manipulation/numpy_arrays.md)
   - [Reading Data Files]()
   - [Applying Cuts]()
 
