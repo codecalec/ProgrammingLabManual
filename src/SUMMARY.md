@@ -2,9 +2,9 @@
 - [Introduction](./introduction.md)
 
 - [Data Manipulation](./data_manipulation/README.md)
-  - [Intro to Numpy arrays](./data_manipulation/numpy_arrays.md)
+  - [Intro to NumPy](./data_manipulation/intro_to_numpy.md)
   - [Reading Data Files]()
-  - [Applying Cuts]()
+  - [Applying Cuts](./data_manipulation/applying_cuts.md)
 
 
 - [Plotting](./plotting/README.md)
