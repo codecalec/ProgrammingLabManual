@@ -31,6 +31,8 @@ plt.plot(t, x)
 plt.plot(t, v)
 plt.show()
 ```
+Documentaion for `plt.plot()` can be found [online](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html).
+
 
 ### Saving Plots
 Plots can be manually saved through the window that pops up when using `plt.show()` or through Python code using `plt.savefig()`.

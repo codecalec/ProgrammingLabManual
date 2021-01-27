@@ -2,7 +2,7 @@
 
 Now that we know how to read handle our data, how do we read and write from data files that we obtain in the lab.
 One of the most common plain text data files you will find are Comma-Seperated Value (CSV) files which usually have the file extension `.csv`. 
-They are formatted like this:
+They are formatted like this file which we will refer to as `example.csv`:
 ``` csv
 time,posx,posy
 0.0,0.0,-5.0
@@ -21,7 +21,7 @@ There also exist tab and space seperated files.
 
 ### Manually Reading Files
 
-We will assume a data file `example.csv` is located in the same directory where you are running Python.
+We will assume the data file `example.csv` is located in the same directory where you are running Python.
 
 ``` python
 # Always have well named functions with suitable arguments 
@@ -34,7 +34,7 @@ def read_data_file(filename):
 		# Read in the first line of the file which is usually column headers
 		header_line = f.readline()
 		headers = header_line.split(",")
-		print("Reading in:", headers)
+		print("Reading in ", headers, "from", filename)
 	
 		# Loops over every remaining line in the file
 		for line in f:
@@ -56,23 +56,26 @@ The above code will work fine for our example but it could be better.
 Let us change some code to make it more generalised for any csv formatted file.
 
 ``` python
-def read_data_file(filename):
+def read_data_file_improved(filename):
         rows = [] # This list will store each row as a list of floating point numbers
         
         with open(filename) as f: # Opens the text file for reading
                 header_line = f.readline()
                 headers = header_line.strip().split(",")
-                print("Reading in:", *headers)
+                print("Reading in", headers, "from file", filename)
 
                 for line in f:
                         items = line.strip().split(",")
-                        items = [float(x) for x in items]
+                        items = [float(x) for x in items] 
                         rows.append(items)
 
         return np.array(rows)
 
-arr = read_data_file("example.csv")
+arr = read_data_file_improved("example.csv")
 ```
+
+This should work for well formated CSV files but may fail for others.
+Be sure to understand the mechanics of this function as reading data from storage is the first hurdle in performing analysis.
 
 ### Reading directly into NumPy
 If we want to convert our file directly into a NumPy array, we can use the function `np.genfromtxt()`.
