@@ -31,8 +31,6 @@ Using colour and patterns, we can start to optimise our figure space.
 ``` python
 import numpy as np
 
-# If you don't understand what is happening here,
-# recap at https://www.w3schools.com/python/python_functions.asp
 def gaussian_func(x, mean, std):
     # Evaluate a Gaussian of mu=mean and sigma=std at x 
 	return (
