@@ -21,16 +21,15 @@ plt.hist(data, bins=5)
 plt.hist(data, bins=np.arange(0,5))
 ```
 
+![plt.hist() Example](../images/hist_example.png)
+
 Documentation for `plt.hist()` can be found [online](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html?highlight=hist#matplotlib.pyplot.hist).
 
 `plt.hist()` provides a quick method to get a histogram up and running but we don't have a chance to manipulate it.
 A common example is when we want to calculate the uncertainty related to each bin.
 ``` python
 # Converts unbinned data into binned data
-# Look at python tuples if this line confuses you:
-# https://www.w3schools.com/python/python_tuples.asp
 counts, edges = np.histogram(data)
-counts_uncertainty = counts / np.sqrt(len(data)) # Calculate Poisson error of each bin
 
 # The bins variable says how many bins we have
 # The weights variable dictates the height of our bins
@@ -47,18 +46,21 @@ When we do this, we need to make sure that we are placing our point in the centr
 This could be done similarly to the `get_centres()` function shown below.
 
 ``` python
-N = 1000
+N = 500
 data = np.random.normal(0, 1, N)
 
 counts, edges = np.histogram(data)
-counts_uncertainty = counts/np.sqrt(N) # Poisson error
+counts_uncertainty = counts/np.sqrt(N) # Poisson error of each bin
 
 def get_centres(edges):
 	# Take the edges of a histogram and return the centres of each bin as a list
+	# Also need to remove the last edge
 	bin_width = edges[1] - edges[0]
-	return edges + bin_width/2
+	return edges[:-1] + bin_width/2
 
 centres = get_centres(edges)
-plt.errorbar(centres, counts, marker="o" yerr=counts_uncertainty, linestyle="None")
+plt.errorbar(centres, counts, marker="o", yerr=counts_uncertainty, linestyle="None")
 plt.show()
 ```
+
+![Histogram Errorbar Example](../images/hist_errorbar_example.png)

@@ -5,23 +5,24 @@ We can place our data onto figures but it is necessary to make sure that our plo
 The default text size for Matplotlib is a bit on the small side and can produce hard to read plots when included in \\(\LaTeX\\) documents.
 This can be changed to something more reasonable.
 ``` python
-plt.rcParams.update({'font.size': 22}) # Adjust 22 to the size you need
+plt.rcParams.update({'font.size': 18}) # Adjust 18 to the size you need
 ```
 
 ### Labelling your Plots
 A plot is useless without clear label with the associated physical units.
 We can easily include these in our plots with some self-explanatory functions.
 ```python
-fig = plt.figure() 
 t = np.linspace(0, 10, 100)
 x = np.sin(t)
 
-fig.plot(t, x)
-fig.xlabel("Time [s]") # Adds label for x-axis
-fig.ylabel("Position [m]") # Adds label for y-axis
-fig.title("Position vs. Time") # Adds title
-fig.show()
+plt.plot(t, x)
+plt.xlabel("Time [s]") # Adds label for x-axis
+plt.ylabel("Position [m]") # Adds label for y-axis
+plt.title("Position vs. Time") # Adds title
+plt.show()
 ```
+
+![Labelling Example](../images/labelling_example.png)
 
 ### Styling your Plots
 One of the keys to presenting functional plots is to ensure that multiple pieces of information can be included in a single plot.
@@ -51,6 +52,8 @@ plt.plot(combined, color="red")
 plt.title("Double Peak")
 plt.show()
 ```
+
+![Styling Example](../images/styling_example.png)
 
 A complete list of [linestyles](https://matplotlib.org/gallery/lines_bars_and_markers/linestyles.html) and [colours](https://matplotlib.org/gallery/color/named_colors.html) can be found in the Matplotlib documentation.
 
@@ -82,4 +85,7 @@ plt.plot(x, g, label="$g(x) = \\beta x^{2}$")
 plt.legend()
 plt.show()
 ```
+
+![Legend Example](../images/legend_example.png)
+
 Full documentation can be found [online](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.legend.html).

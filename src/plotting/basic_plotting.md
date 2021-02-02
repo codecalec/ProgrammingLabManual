@@ -17,6 +17,9 @@ y = 2 * x # Use element-wise operations to generate f(x)
 plt.plot(x, y) # Create a plot element on the current figure
 plt.show() # Display the current figure in a window
 ```
+
+![plt.plot() Example](../images/plt_plot_example.png)
+
 Here, we are plotting \\( f(x) = 2x \\) between 1 and 5 and showing the result in a window.
 Note that `plt.plot()` uses an `x` list and `y` list to represent the locations on those axes.
 These lists can be normal Python lists or most other list-like objects you'll find in the wild.
@@ -31,6 +34,9 @@ plt.plot(t, x)
 plt.plot(t, v)
 plt.show()
 ```
+
+![Multiple Plot Example](../images/multiple_plot_example.png)
+
 Documentaion for `plt.plot()` can be found [online](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html).
 
 
@@ -46,11 +52,14 @@ plt.clf() # Clears your figure
 ### scatter()
 The function `plt.scatter()` allows us to plot dots representing two different variables.
 ```python
-x = [1, 2, 3]
-y = [2, 4, 6]
+x = np.array([1, 2, 3])
+y = np.array([2, 4, 6])
 plt.scatter(x, y) # similar usage to plt.plot()
-plt.scatter(x, y, s=5) # s represents the size of dots plotted
+plt.scatter(x, y + 1, s=100) # s represents the size of dots plotted
 ```
+
+![plt.scatter() Example](../images/plt_scatter_example.png)
+
 Full documentation is available [online](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html#matplotlib.pyplot.scatter).
 
 ### errorbar()
@@ -68,15 +77,19 @@ uncertainty = np.array([1.2, 1.0, 1.0, 0.8, 0.8])
 
 # This will produce a plot with errorbars representing the uncertainty on the y axis
 # The yerr parameter can either be a constant value
-plt.errorbar(time, temperature, yerr=1.0)
+plt.errorbar(time, temperature, yerr=2.0)
 
 # or yerr can be a list of the same length as the x and y parameters
-plt.errorbar(time, temperature, yerr=uncertainty)
+plt.errorbar(time, temperature - 5, yerr=uncertainty)
 
 # Including the linestyle parameter as "None" 
 # will remove that annoying straight line between points
-plt.errorbar(time, temperature, yerr=uncertainty, linestyle="None")
+plt.errorbar(time, temperature - 10, yerr=uncertainty, linestyle="None")
 ```
+
+![plt.errorbar() Example](../images/plt_errorbar_example.png)
+
+
 Full documentation is available [online](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.errorbar.html).
 
 ## Exercises
