@@ -12,6 +12,30 @@ NumPy provides us a fast and elegant method of creating multidimensional arrays 
 
 ### Operators and Functions
 
+The strength using NumPy arrays come from the implicit mapping of functions and operators which allows us to easily manipulate arrays.
+
+If we wanted to apply an operator or function across an array, the simpliest way of doing this is by using a loop.
+``` python
+x = [2, 3, 5, 7, 11]
+y = []
+z = []
+
+for i in x:
+	y.append(2 * i)
+	z.append(np.exp(i))
+```
+
+This can be summarised quite easily using NumPy arrays.
+
+``` python
+x = np.array([2, 3, 5, 7, 11])
+y = 2 * x
+z = np.exp(x)
+```
+
+This method is easier to read and way faster than using base python methods.
+NumPy takes advantage of faster compiled languages to achieve this better performance.
+
 ### Using NumPy arrays as matrices
 NumPy allows us to create multidimensional array where 1 and 2-dimensional arrays will be the most commonly used.
 2-dimensional arrays can be thought of as matrices and we can perform operations that should be familiar from linear algebra. 
