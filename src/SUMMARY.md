@@ -15,4 +15,4 @@
 - [Fitting](./fitting/README.md)
   - [Least Squares Regression]()
   - [Least Likelihood Fit]()
-  - [Cheating with curvefit]()
+  - [Using scipy.optimize.curve_fit()](./fitting/curve_fit.md)
