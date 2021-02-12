@@ -40,7 +40,7 @@ def gaussian_func(x, mean, std, A):
         A * np.exp(-((x - mean) ** 2) / (2 * std ** 2))
     )
 	
-initial_values=[0, 1, 1]
+initial_values = [0, 1, 1]
 
 x_data = edges[:-1]
 y_data = counts
