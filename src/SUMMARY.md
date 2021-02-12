@@ -13,6 +13,9 @@
   - [Working with Histograms](./plotting/histograms.md)
 
 - [Fitting](./fitting/README.md)
-  - [Least Squares Regression]()
+  - [Linear Regression](./fitting/linear_regression.md)
   - [Least Likelihood Fit]()
   - [Using scipy.optimize.curve_fit()](./fitting/curve_fit.md)
+
+- [Advanced Topics](./advanced/README.md)
+  - [Version Control](./advanced/version_control.md)
