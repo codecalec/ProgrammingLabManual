@@ -4,6 +4,7 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Programming Lab Manual"
+description = "An reference guide for undergraduate physics students wanting some help with their lab assignments."
 
 [output.html]
 mathjax-support = true
