@@ -1,16 +1,17 @@
-import os
 import pathlib
 
 import numpy as np
 import matplotlib.pyplot as plt
 
-plt.rcParams.update({'font.size': 18}) # Adjust 18 to the size you need
+import gaus_example
 
-IMAGE_DIR=pathlib.Path(__file__).parent.parent.absolute() / "src/images/"
+plt.rcParams.update({'font.size': 16}) # Adjust 16 to the size you need
+
+IMAGE_DIR = pathlib.Path(__file__).parent.parent.absolute() / "src/images/"
 print(f"Saving images to {IMAGE_DIR}")
 
 def plt_plot_example():
-    x = np.array([1, 2, 3, 4]); # Create a 1D numpy array
+    x = np.array([1, 2, 3, 4]) # Create a 1D numpy array
     y = 2 * x # Use element-wise operations to generate f(x)
     plt.plot(x, y) # Create a plot element on the current figure
     plt.savefig(IMAGE_DIR / "plt_plot_example.png", dpi=200)
@@ -130,3 +131,4 @@ if __name__ == "__main__":
     legend_example()
     hist_example()
     hist_errorbar_example()
+    gaus_example.plot_random_gaus(1000)
