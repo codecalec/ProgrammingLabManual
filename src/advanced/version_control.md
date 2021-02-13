@@ -10,10 +10,10 @@ It can be downloaded on their [website](https://git-scm.com/downloads) or using 
 ### Working with a local repository
 
 I will run through the basic commands needed to get your project version controlled.
-I will assume that you have already created your project directory and am able to navigate to the directory in the commandline interface of your system.
-If you're not comfortable with the commandline, this [guide](https://tutorial.djangogirls.org/en/intro_to_command_line/) by Django Girls provides instructions for any platform.
+I will assume that you have already created your project directory and are able to navigate to the directory in the commandline interface of your system.
+If you're not comfortable with the commandline, this [guide](https://tutorial.djangogirls.org/en/intro_to_command_line/) by Django Girls provides instructions for any major platform.
 
-Let's start by creating our _Git repository_ or sometimes called a Git repo.
+We can start by creating our _Git repository_ or sometimes called a Git repo.
 This is the system that we will use to keep track of any changes to our project.
 We initialise our Git repo in the directory in which we want our files to be tracked.
 I will be using the source directory for this very book as an example.
@@ -119,12 +119,12 @@ The `HEAD` commit is the latest commit.
 
 We now know how to move up and down the commit tree (using `git commit` and `git reset`) so let us learn about moving horizontally.
 This is known as creating a branch.
-This new branch can exist seperate from main branch and commits can be performed on this new branch independently.
+This new branch can exist separate from main branch and commits can be performed on this new branch independently.
 Once we feel that our new branch is worthy, it can be merged into the main branch.
 The changes on the new branch will be placed into the main branch and the new branch will be removed.
 
-Branches allow us to _sandbox_ our changes and allow seperate editions of the same codebase to exist side by side.
-This could be useful you want to work on a seperate feature while your colleagues work on the main branch.
+Branches allow us to _sandbox_ our changes and allow separate editions of the same codebase to exist side by side.
+This could be useful you want to work on a separate feature while your colleagues work on the main branch.
 
 Let us create a branch to update our project with a new data acquisition system.
 This is done through the `git branch` command.
@@ -138,7 +138,7 @@ $ git branch
 
 Using the command `git branch` by itself will print the branches available in the repo.
 If we append that command with a branch name, it will create our new branch.
-In the example output you can see the asterisk indicating that we are still working in the master branch.
+In the example output, you can see the asterisk indicating that we are still working in the master branch.
 To start working in our newly created branch, we use the command `git checkout`.
 
 ``` sh
@@ -150,7 +150,7 @@ $ git branch
 
 Any commits or other changes will be performed on the `new_daq` branch, leaving the master branch unchanged.
 
-Once we are done implementing our new DAQ system and committed these changes, we can merge the changes into the master branch.
+Once the new DAQ system is implemented and the changes have been committed, we can merge the changes into the master branch.
 This is done with the `git merge` command.
 
 ``` sh
@@ -175,6 +175,6 @@ Here are a group of fantastic resources if you are still not sure on the concept
 - [Missing Semester - Version Control (Git)](https://missing.csail.mit.edu/2020/version-control/) - Amazing lecture series talking about the tools need in software development. Mainly aimed at a Computer Science background.
 - [GitHub Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf) - A cheatsheet to have bookmarked.
 
-> __Note__: Git is one of the most ubiquitious pieces of software used by developers around the world. 
+> __Note__: Git is one of the most ubiquitous pieces of software used by developers around the world. 
 > If you are having an issue, there will be tons of tutorials, guides, wikis, blogs, books and individuals able to help.
 > Use the power of modern search engines to make your life easier.
