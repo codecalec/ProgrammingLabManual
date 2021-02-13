@@ -29,7 +29,7 @@ Now that our Git repo is setup, we can see if there are any files that we can te
 I've created a new example file called `example.py` to the directory.
 We can use `git status` to show us some information about our Git repo.
 
-```sh
+``` sh
 $ git status
 On branch master
 
