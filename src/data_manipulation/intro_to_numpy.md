@@ -3,7 +3,21 @@
 NumPy is one of the most important packages needed for smart Python data analysis.
 If you have never used the package before, read the [guide for absolute beginners](https://numpy.org/doc/stable/user/absolute_beginners.html) in the NumPy documentation.
 
+It can be installed using `pip`.
+``` sh
+$ pip install numpy
+```
+
+We can import NumPy into Python
+
+``` python
+import numpy as np
+```
+It is common practice to use `as np`.
+Most material on the topic will use this alias.
+
 ### Creating NumPy arrays
+
 NumPy provides us a fast and elegant method of creating multidimensional arrays known as `ndarray` objects or more commonly as NumPy arrays.
 - `np.ones(n)`: Creates an array of `n` elements with 1 as entries [[link](https://numpy.org/doc/stable/reference/generated/numpy.ones.html)]
 - `np.zeros(n)`: Like `np.ones()` but with 0 [[link](https://numpy.org/doc/stable/reference/generated/numpy.zeros.html)]

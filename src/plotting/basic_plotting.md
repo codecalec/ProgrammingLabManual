@@ -1,14 +1,25 @@
 # Basic Plotting
-In order to use Matplotlib, we need to import it.
+
+Matplotlib will be used for plotting throughout this chapter.
+It can be downloaded using `pip` or any Python package manager.
+
+``` shell
+$ pip install matplotlib
+```
+
+In order to use Matplotlib in our program, we need to import it.
+
 ``` python
 import matplotlib.pyplot as plt 
 ```
+
 We use the `as` keyword to substitute for the longer part with `plt`.
 It will be assumed that you have this line for the rest of this chapter.
 
 > If you get an error related to this line, make sure your have installed Matplotlib correctly
 
 The function `plt.plot()` allows us to plot straight line graphs quickly.
+
 ``` python
 import matplotlib.pyplot as plt
 
@@ -25,6 +36,7 @@ Note that `plt.plot()` uses an `x` list and `y` list to represent the locations 
 These lists can be normal Python lists or most other list-like objects you'll find in the wild.
 
 We can include multiple plots in a single figure by calling multiple functions that add plots to the figure.
+
 ```python
 t = np.linspace(0, 2*np.pi, 100) # list representing time steps from 0 to 10 seconds
 x = np.sin(t) # Position over time
@@ -39,7 +51,6 @@ plt.show()
 
 Documentaion for `plt.plot()` can be found [online](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html).
 
-
 ### Saving Plots
 Plots can be manually saved through the window that pops up when using `plt.show()` or through Python code using `plt.savefig()`.
 
@@ -50,7 +61,9 @@ plt.clf() # Clears your figure
 ```
 
 ### scatter()
+
 The function `plt.scatter()` allows us to plot dots representing two different variables.
+
 ```python
 x = np.array([1, 2, 3])
 y = np.array([2, 4, 6])
@@ -63,8 +76,10 @@ plt.scatter(x, y + 1, s=100) # s represents the size of dots plotted
 Full documentation is available [online](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html#matplotlib.pyplot.scatter).
 
 ### errorbar()
+
 The `plt.errorbar()` function is one of the most used in experimental labs.
 It allows use to produce a scatter-like plot but with lovely uncertainty markers.
+
 ```python
 # list showing time from 0 to 4 seconds
 time = np.arange(0, 5) 
