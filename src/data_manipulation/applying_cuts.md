@@ -31,5 +31,5 @@ data[:,1] = np.exp(data[:,1]) # Exponentiate the second column
 ```
 
 ## Exercises
-1. Generate some oscillating data using `np.linspace()` and `np.sin()` and merge this into a NumPy array. Write a function which says at which \[ x \] values the function value is positive.
+1. Generate some oscillating data using `np.linspace()` and `np.sin()` and merge this into a NumPy array. Write a function which says at which \\( x \\) values the function value is positive.
 1. Read the chapter on `pandas` package if you want to learn about a more efficient way of performing cuts. 
