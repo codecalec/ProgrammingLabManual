@@ -86,3 +86,10 @@ The arguments include `fname` which is just the name of the file, `headers` whic
 arr = np.genfromtxt(fname="example.csv", headers=1, delimiter=',')
 ```
 Documentation can be found [online](https://numpy.org/doc/stable/reference/generated/numpy.genfromtxt.html).
+
+## Exercises
+
+1. Create your own comma-separated value file with mock lab data and try read it in.
+   1. Using a manual method.
+   2. Using `np.genfromtxt()`
+2. Read the documentation for the [csv](https://docs.python.org/3/library/csv.html) module which is a part of Python. See if you can read and write data to and from `.csv` files using this module.

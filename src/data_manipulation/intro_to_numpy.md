@@ -108,3 +108,8 @@ print(three_by_two[0,0]) # output: 0
 print(three_by_two[0,1]) # output: 1
 print(three_by_two[1,0]) # output: 2
 ```
+
+## Exercises
+
+1. Write a function which checks if a matrix is square.
+2. Write a function which chekcs if a matrix is symmetrical.
