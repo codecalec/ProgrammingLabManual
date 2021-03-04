@@ -2,7 +2,7 @@
 
 In the modern era of computationally assisted science, experimental physics requires a strong understanding of programming and data analysis.
 Physicists work with detectors ranging from those found in an undergraduate labs to enormous building sized structures like those found at the Large Hadron Collider.
-The data produced by these detectors need to be analysed in order to reach into the fundementals of our universe.
+The data produced by these detectors need to be analysed in order to reach into the fundamentals of our universe.
 No modern physics is done without programming and undergraduate labs are the essential training grounds for developing these skills.
 
 This book should be used as reference material alongside your computational training by your lecturers and tutors.
@@ -14,7 +14,7 @@ No one writes worse code than a physics student and I hope to try mitigate the d
 We will go over the [NumPy](https://numpy.org/) stack and how we can use it to manipulate data, create plots and perform regression analysis.
 
 The source files for this book can be found on [Github](https://github.com/codecalec/ProgrammingLabManual).
-If you find any typos, grammatic errors or possible areas of improvement, you can file an issue on the repository.
+If you find any typos, grammatical errors or possible areas of improvement, you can file an issue on the repository.
 
 
 This book is licensed under the [MIT license](https://opensource.org/licenses/MIT) which is included in the [source code repository](https://github.com/codecalec/ProgrammingLabManual/blob/main/LICENSE).

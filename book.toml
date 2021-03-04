@@ -9,4 +9,4 @@ description = "An reference guide for undergraduate physics students wanting som
 [output.html]
 mathjax-support = true
 git-repository-url = "https://github.com/codecalec/ProgrammingLabManual"
-additional-css = ["src/centre_images.css"]
+additional-css = ["css/centre_images.css"]
