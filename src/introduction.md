@@ -1,13 +1,13 @@
 # Introduction
 
 In the modern era of computationally assisted science, experimental physics requires a strong understanding of programming and data analysis.
-Physicists work with detectors ranging from those found in an undergraduate labs to enormous building sized structures like those found at the Large Hadron Collider.
+Physicists work with detectors ranging from those found in an undergraduate labs to enormous building sized structures like those found at the Large Hadron Collider (LHC).
 The data produced by these detectors need to be analysed in order to reach into the fundamentals of our universe.
 No modern physics is done without programming and undergraduate labs are the essential training grounds for developing these skills.
 
 This book should be used as reference material alongside your computational training by your lecturers and tutors.
-I will be focussing mainly on how to perform data analysis using the [Python](https://www.python.org/) programming langauge.
-A basic knowledge of the langauge is assumed throughout the book.
+I will be focussing mainly on how to perform data analysis using the [Python](https://www.python.org/) programming language.
+A basic knowledge of the language is assumed throughout the book.
 
 My aim is to provide clear and informative examples of analysis code with pointers to further resources.
 No one writes worse code than a physics student and I hope to try mitigate the damage that will be done to future research groups.
